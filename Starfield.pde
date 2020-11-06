@@ -41,7 +41,16 @@ class OddballParticle extends Particle//inherits from Particle
   void show() {
     mySize = 75;
     fill(myColor);
+    //base
     ellipse(myX, myY, mySize, mySize);
+    //middle
+    //fill(117, 219, 244);
+    //ellipse(myX + mySize/5, myY-mySize/5, mySize/2, mySize/3);
+    //fill(255);
+    //ellipse(myX + mySize/4, myY-mySize/4, mySize/3, mySize/5);
+    fill(0);
+    textSize(40);
+    text(":0", myX-mySize/3, myY+10);
   }
   
   void move() {
